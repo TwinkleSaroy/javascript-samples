@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script>
+       function sayHello(name,age){
+ alert('hello javascript ')
+ document.write(name  +   "is"   +  age  +   "years old")
+       }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write('javascript Demos')
+            var age=10;
+            var count=0;
+            var day = 'c';
+            if(age<20){
+                document.write('list in young ')
+            }
+            else{
+                document.write('old')
+            }
+            while(count<10){
+               
+                document.write("current counter:" + count + "<br/>");
+                count++;
+            }
+ document.write("switch case uses here <br/>");
+ switch(day){
+   case 'a': document.write('day is sunday <br/>');
+   
+    
+   case 'b': document.write('day is monday <br/>');
+   case 'c': document.write('day is tuesday <br/>');
+   
+   case 'd': document.write('day is wednesday <br/>');
+   
+   case 'e': document.write('day is thursday <br/>');
+   
+   case 'f': document.write('day is friday <br/>');
+   
+   case 'g': document.write('day is saturday <br/>');
+   
+   default: doument.write('invalid day')
+
+ }
+ function getConfirmation(){
+     var retVal = confirm('Do yo want to continue?');
+     if(retVal==true){
+         document.write('User wants to continue!');
+         return true;
+     }else{
+         document.write('user does not want to countinue');
+         return false;
+     }
+
+ }
+ 
+ 
+ 
+ 
+        </script>
+    <button onclick= " getConfirmation()">click here</button>
+    <input type = "button" onclick = "sayHello('twinkle', 32)" value = "click me" />
+
+    </body>
+</html>

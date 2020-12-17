@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>opps concepts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <script>
+            //creating object in javascript
+            var book = new Object();
+            book.subject = "Core Java";
+            book.author = "Mr. Perl";
+
+           // book.prototype.price = null;
+            book.price = 100;
+        </script>
+        
+
+    </head>
+    <body>
+
+        <p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+        <p id="demo"></p>
+    <script>
+        document.write("Book name: =  " + book.subject + '<br/>');
+        document.write("Book author: =  " + book.author + '<br/>');
+       // String constructor
+       var str = new String('This is String');
+         // String constructor
+        document.write('str.constructor is:' + str.constructor + ' <br/>');
+         // String length
+        document.write('the length of string :' + str.length +' <br/>');
+        // string prototype
+        document.write("Book price is : " + book.price + "<br>");
+
+
+        //Array Decleration
+
+        var fruits = ['apple', 'mango','plum','qwer', 'wret'];
+        var alpha = ['a','b','c','d'];
+        var numeric =  [1,2,3,4,5];
+        var alphanumeric= alpha.concat(numeric);
+
+        fruits.push('Lichi');
+        document.write(fruits);
+        document.write('length of array :' + fruits.length + '<br/>');
+        document.write('concatination of alpha and numeric arrays:' + alphanumeric)
+
+        //String methods for finding index
+        
+
+        var str1 ="it is the finding for postion of a stringword in javascript ";
+        var pos = str1.indexOf("stringword");
+       debugger;
+        document.getElementById("demo").innerHTML = str1.indexOf("stringword");//pos;
+
+
+        //setTimeout() function
+        var d = setTimeout(showalert,2000);
+ function showalert(){
+     alert("this is setTimeout() function");
+ }
+
+ 
+ class Students{
+     constructor(name,age){
+         this.myname = name;
+         this.myage = age;
+     }
+
+     biodata(){
+         console.log(`Hi ${this.myname}. I am ${this.myage}`);
+     }
+ }
+ class Player extends Students{
+
+ }
+
+
+ let obj1 = new Students('twinkle',15);
+ obj1.biodata();
+    </script>
+    <button onclick="clearInterval(d)">setTimeout</button>
+    </body>
+</html>

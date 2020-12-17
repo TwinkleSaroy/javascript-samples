@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <script>
+        for(let i=1; i<11; i++){
+     setTimeout(1000)
+     document.write(i,"<br/>")
+ }
+
+ var str = "6"+true;
+ var ts = 2+true;
+ var br = "<br/>";
+
+ document.write(br );
+ document.write(str );
+ document.write(br );
+ document.write(ts);
+
+ var tr = true;
+ document.write(br );
+
+ document.write(typeof(tr))
+ console.log(typeof(tr))
+
+ // use of Promise
+ let laptop = new Promise((resolve,reject)=>{
+     resolve('Promise is resolve');
+ });
+ 
+ laptop.then(res=>{
+     console.log('success' ,res);
+ })
+
+ // use of  async await
+
+ let promise = new Promise((resolve,reject)=>{
+     setTimeout(()=>{
+         resolve('data recieved')
+     },3000);
+ })
+
+ async function getData(){
+     let response= await promise;
+     console.log(response)
+ }
+
+ getData()
+
+    </script>
+    </body>
+</html>
